@@ -84,6 +84,14 @@
       "type": "string"
     }
   },
+  "category": {
+    "description": "An array of monster category.",
+    "type": "list",
+    "required": true,
+    "schema": {
+      "type": "string"
+    }
+  },
   "slayer_monster": {
     "description": "If the monster is a potential slayer task.",
     "type": "boolean",

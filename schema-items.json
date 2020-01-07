@@ -74,6 +74,7 @@
   },
   "equipable_by_player": {
     "description": "If the item is equipable in-game by a player.",
+    "type": "boolean",
     "required": true
   },
   "equipable_weapon": {

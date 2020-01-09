@@ -2,22 +2,26 @@
   "id": {
     "description": "Unique OSRS item ID number.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "name": {
     "description": "The name of the monster.",
     "type": "string",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "incomplete": {
     "description": "If the monster has incomplete wiki data.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "members": {
     "description": "If the monster is members only, or not.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "release_date": {
     "description": "The release date of the monster (in ISO8601 format).",
@@ -28,27 +32,32 @@
   "combat_level": {
     "description": "The combat level of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "size": {
     "description": "The size, in tiles, of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "hitpoints": {
     "description": "The number of hitpoints a monster has.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "max_hit": {
     "description": "The maximum hit of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_type": {
     "description": "The attack style (melee, magic, range) of the monster.",
     "type": "list",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_speed": {
     "description": "The attack speed (in game ticks) of the monster.",
@@ -59,27 +68,32 @@
   "aggressive": {
     "description": "If the monster is aggressive, or not.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "poisonous": {
     "description": "If the monster poisons, or not",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "immune_poison": {
     "description": "If the monster is immune to poison, or not",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "immune_venom": {
     "description": "If the monster is immune to venom, or not",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "weakness": {
     "description": "An array of monster weaknesses.",
     "type": "list",
     "required": true,
+    "nullable": false,
     "schema": {
       "type": "string"
     }
@@ -88,6 +102,7 @@
     "description": "An array of monster category.",
     "type": "list",
     "required": true,
+    "nullable": false,
     "schema": {
       "type": "string"
     }
@@ -95,7 +110,8 @@
   "slayer_monster": {
     "description": "If the monster is a potential slayer task.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "slayer_level": {
     "description": "The slayer level required to kill the monster.",
@@ -128,117 +144,140 @@
   "duplicate": {
     "description": "If the monster is a duplicate.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "examine": {
     "description": "The examine text of the monster.",
     "type": "string",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "wiki_name": {
     "description": "The OSRS Wiki name for the monster.",
     "type": "string",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "wiki_url": {
     "description": "The OSRS Wiki URL (possibly including anchor link).",
     "type": "string",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_level": {
     "description": "The attack level of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "strength_level": {
     "description": "The strength level of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "defence_level": {
     "description": "The defence level of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "magic_level": {
     "description": "The magic level of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "ranged_level": {
     "description": "The ranged level of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_stab": {
     "description": "The attack stab bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_slash": {
     "description": "The attack slash bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_crush": {
     "description": "The attack crush bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_magic": {
     "description": "The attack magic bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_ranged": {
     "description": "The attack ranged bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "defence_stab": {
     "description": "The defence stab bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "defence_slash": {
     "description": "The defence slash bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "defence_crush": {
     "description": "The defence crush bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "defence_magic": {
     "description": "The defence magic bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "defence_ranged": {
     "description": "The defence ranged bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "attack_accuracy": {
     "description": "The attack accuracy bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "melee_strength": {
     "description": "The melee strength bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "ranged_strength": {
     "description": "The ranged strength bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "magic_damage": {
     "description": "The magic damage bonus of the monster.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "drops": {
     "description": "An array of monster drop objects.",
@@ -252,17 +291,20 @@
         "id": {
           "description": "The ID number of the item drop.",
           "type": "integer",
-          "required": true
+          "required": true,
+          "nullable": false
         },
         "name": {
           "description": "The name of the item drop.",
           "type": "string",
-          "required": true
+          "required": true,
+          "nullable": false
         },
         "members": {
           "description": "If the drop is a members-only item.",
           "type": "boolean",
-          "required": true
+          "required": true,
+          "nullable": false
         },
         "quantity": {
           "description": "The quantity of the item drop (integer, comma-separated or range).",
@@ -273,7 +315,8 @@
         "noted": {
           "description": "If the item drop is noted, or not.",
           "type": "boolean",
-          "required": true
+          "required": true,
+          "nullable": false
         },
         "rarity": {
           "description": "The rarity of the item drop (as a float out of 1.0).",

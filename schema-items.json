@@ -2,47 +2,56 @@
   "id": {
     "description": "Unique OSRS item ID number.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "name": {
     "description": "The name of the item.",
     "type": "string",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "incomplete": {
     "description": "If the item has incomplete wiki data.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "members": {
     "description": "If the item is a members-only.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "tradeable": {
     "description": "If the item is tradeable (between players and on the GE).",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "tradeable_on_ge": {
     "description": "If the item is tradeable (only on GE).",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "stackable": {
     "description": "If the item is stackable (in inventory).",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "noted": {
     "description": "If the item is noted.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "noteable": {
     "description": "If the item is noteable.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "linked_id_item": {
     "description": "The linked ID of the actual item (if noted/placeholder).",
@@ -65,37 +74,44 @@
   "placeholder": {
     "description": "If the item is a placeholder.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "equipable": {
     "description": "If the item is equipable (based on right-click menu entry).",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "equipable_by_player": {
     "description": "If the item is equipable in-game by a player.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "equipable_weapon": {
     "description": "If the item is an equipable weapon.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "cost": {
     "description": "The store price of an item.",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "lowalch": {
     "description": "The low alchemy value of the item (cost * 0.4).",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "highalch": {
     "description": "The high alchemy value of the item (cost * 0.6).",
     "type": "integer",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "weight": {
     "description": "The weight (in kilograms) of the item.",
@@ -112,7 +128,8 @@
   "quest_item": {
     "description": "If the item is associated with a quest.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "release_date": {
     "description": "Date the item was released (in ISO8601 format).",
@@ -123,7 +140,8 @@
   "duplicate": {
     "description": "If the item is a duplicate.",
     "type": "boolean",
-    "required": true
+    "required": true,
+    "nullable": false
   },
   "examine": {
     "description": "The examine text for the item.",
@@ -152,77 +170,92 @@
       "attack_stab": {
         "description": "The attack stab bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "attack_slash": {
         "description": "The attack slash bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "attack_crush": {
         "description": "The attack crush bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "attack_magic": {
         "description": "The attack magic bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "attack_ranged": {
         "description": "The attack ranged bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "defence_stab": {
         "description": "The defence stab bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "defence_slash": {
         "description": "The defence slash bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "defence_crush": {
         "description": "The defence crush bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "defence_magic": {
         "description": "The defence magic bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "defence_ranged": {
         "description": "The defence ranged bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "melee_strength": {
         "description": "The melee strength bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "ranged_strength": {
         "description": "The ranged strength bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "magic_damage": {
         "description": "The magic damage bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "prayer": {
         "description": "The prayer bonus of the item.",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "slot": {
         "description": "The equipment slot associated with the item (e.g., head).",
         "type": "string",
         "required": true,
+        "nullable": false,
         "allowed": [
           "2h",
           "ammo",
@@ -287,17 +320,20 @@
       "attack_speed": {
         "description": "The attack speed of a weapon (in game ticks).",
         "type": "integer",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "weapon_type": {
         "description": "The weapon classification (e.g., axe)",
         "type": "string",
-        "required": true
+        "required": true,
+        "nullable": false
       },
       "stances": {
         "description": "An array of weapon stance information.",
         "type": "list",
         "required": true,
+        "nullable": false,
         "schema": {
           "type": "dict",
           "schema": {

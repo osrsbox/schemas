@@ -1,0 +1,74 @@
+{
+  "id": {
+    "description": "Unique prayer ID number.",
+    "type": "integer",
+    "required": true,
+    "nullable": false
+  },
+  "name": {
+    "description": "The name of the prayer.",
+    "type": "string",
+    "required": true,
+    "nullable": false
+  },
+  "members": {
+    "description": "If the prayer is members-only.",
+    "type": "boolean",
+    "required": true,
+    "nullable": false
+  },
+  "description": {
+    "description": "The prayer description (as show in-game).",
+    "type": "string",
+    "required": true,
+    "nullable": false
+  },
+  "drain_per_minute": {
+    "description": "The prayer point drain rate per minute.",
+    "type": "integer",
+    "required": true,
+    "nullable": false
+  },
+  "wiki_url": {
+    "description": "The OSRS Wiki URL.",
+    "type": "string",
+    "required": true,
+    "nullable": false
+  },
+  "requirements": {
+    "description": "The stat requirements to use the prayer.",
+    "type": "integer",
+    "required": true,
+    "nullable": false,
+    "keysrules": {
+      "type": "string",
+      "allowed": [
+        "prayer",
+        "defence"
+      ]
+    },
+    "valuesrules": {
+      "type": "integer"
+    }
+  },
+  "bonuses": {
+    "description": "The bonuses a prayer provides.",
+    "type": "dict",
+    "required": true,
+    "nullable": false,
+    "keysrules": {
+      "type": "string",
+      "allowed": [
+        "attack",
+        "defence",
+        "magic",
+        "ranged",
+        "ranged_strength",
+        "strength"
+      ]
+    },
+    "valuesrules": {
+      "type": "integer"
+    }
+  }
+}

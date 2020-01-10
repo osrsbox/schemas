@@ -25,7 +25,7 @@
   },
   "drain_per_minute": {
     "description": "The prayer point drain rate per minute.",
-    "type": "integer",
+    "type": "float",
     "required": true,
     "nullable": false
   },
@@ -37,7 +37,7 @@
   },
   "requirements": {
     "description": "The stat requirements to use the prayer.",
-    "type": "integer",
+    "type": "dict",
     "required": true,
     "nullable": false,
     "keysrules": {

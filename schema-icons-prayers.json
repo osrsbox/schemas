@@ -1,0 +1,14 @@
+{
+    "id": {
+      "description": "Unique OSRS prayer ID number.",
+      "type": "integer",
+      "required": true,
+      "nullable": false
+    },
+    "icon": {
+      "description": "The icon image (in base64 encoding) of the prayer.",
+      "type": "string",
+      "required": true,
+      "nullable": false
+    }
+}

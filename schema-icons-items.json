@@ -1,0 +1,14 @@
+{
+    "id": {
+      "description": "Unique OSRS item ID number.",
+      "type": "integer",
+      "required": true,
+      "nullable": false
+    },
+    "icon": {
+      "description": "The icon image (in base64 encoding) of the item.",
+      "type": "string",
+      "required": true,
+      "nullable": false
+    }
+}

@@ -150,7 +150,7 @@
     "nullable": true
   },
   "icon": {
-    "descripttion": "The item icon.",
+    "description": "The item icon.",
     "type": "string",
     "required": true,
     "nullable": false

@@ -154,7 +154,7 @@
     "nullable": false
   },
   "icon": {
-    "descripttion": "The monster icon.",
+    "description": "The monster icon.",
     "type": "string",
     "required": true,
     "nullable": true

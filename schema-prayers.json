@@ -72,7 +72,7 @@
     }
   },
   "icon": {
-    "descripttion": "The prayer icon.",
+    "description": "The prayer icon.",
     "type": "string",
     "required": true,
     "nullable": false

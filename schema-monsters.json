@@ -153,6 +153,12 @@
     "required": true,
     "nullable": false
   },
+  "icon": {
+    "descripttion": "The monster icon.",
+    "type": "string",
+    "required": true,
+    "nullable": true
+  },
   "wiki_name": {
     "description": "The OSRS Wiki name for the monster.",
     "type": "string",

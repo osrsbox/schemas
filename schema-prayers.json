@@ -70,5 +70,11 @@
     "valuesrules": {
       "type": "integer"
     }
+  },
+  "icon": {
+    "descripttion": "The prayer icon.",
+    "type": "string",
+    "required": true,
+    "nullable": false
   }
 }

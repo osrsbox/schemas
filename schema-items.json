@@ -149,6 +149,12 @@
     "required": true,
     "nullable": true
   },
+  "icon": {
+    "descripttion": "The item icon.",
+    "type": "string",
+    "required": true,
+    "nullable": false
+  },
   "wiki_name": {
     "description": "The OSRS Wiki name for the item.",
     "type": "string",

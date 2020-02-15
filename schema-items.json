@@ -41,6 +41,12 @@
     "required": true,
     "nullable": false
   },
+  "stacked": {
+    "description": "If the item is stacked.",
+    "type": "boolean",
+    "required": true,
+    "nullable": false
+  },
   "noted": {
     "description": "If the item is noted.",
     "type": "boolean",
@@ -150,7 +156,7 @@
     "nullable": true
   },
   "icon": {
-    "description": "The item icon.",
+    "description": "The item icon (in base64 encoding).",
     "type": "string",
     "required": true,
     "nullable": false

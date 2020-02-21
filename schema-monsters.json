@@ -89,14 +89,23 @@
     "required": true,
     "nullable": false
   },
-  "weakness": {
-    "description": "An array of monster weaknesses.",
+  "attribute": {
+    "description": "An array of monster attributes.",
     "type": "list",
     "required": true,
-    "nullable": false,
-    "schema": {
-      "type": "string"
-    }
+    "nullable": true,
+    "allowed": [
+      "demon",
+      "dragon",
+      "fiery",
+      "kalphite",
+      "leafy",
+      "penance",
+      "shade",
+      "undead",
+      "vampyre",
+      "xercian"
+    ]
   },
   "category": {
     "description": "An array of monster category.",

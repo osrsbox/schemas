@@ -89,7 +89,7 @@
     "required": true,
     "nullable": false
   },
-  "attribute": {
+  "attributes": {
     "description": "An array of monster attributes.",
     "type": "list",
     "required": true,

@@ -42,10 +42,10 @@
     "nullable": false
   },
   "stacked": {
-    "description": "If the item is stacked.",
-    "type": "boolean",
+    "description": "If the item is stacked, indicated by the stack count.",
+    "type": "integer",
     "required": true,
-    "nullable": false
+    "nullable": true
   },
   "noted": {
     "description": "If the item is noted.",

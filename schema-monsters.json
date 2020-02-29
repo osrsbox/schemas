@@ -93,7 +93,7 @@
     "description": "An array of monster attributes.",
     "type": "list",
     "required": true,
-    "nullable": true,
+    "nullable": false,
     "allowed": [
       "demon",
       "dragon",
@@ -138,7 +138,7 @@
     "description": "The slayer XP rewarded for a monster kill.",
     "type": "list",
     "required": true,
-    "nullable": true,
+    "nullable": false,
     "allowed": [
       "turael",
       "krystilia",
@@ -298,7 +298,7 @@
     "description": "An array of monster drop objects.",
     "type": "list",
     "required": true,
-    "nullable": true,
+    "nullable": false,
     "schema": {
       "type": "dict",
       "required": false,

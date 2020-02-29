@@ -135,7 +135,7 @@
     "nullable": true
   },
   "slayer_masters": {
-    "description": "The slayer XP rewarded for a monster kill.",
+    "description": "The slayer masters who can assign the monster.",
     "type": "list",
     "required": true,
     "nullable": false,

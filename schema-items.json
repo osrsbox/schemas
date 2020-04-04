@@ -141,7 +141,8 @@
     "description": "Date the item was released (in ISO8601 format).",
     "type": "string",
     "required": true,
-    "nullable": true
+    "nullable": true,
+    "regex": "^(2[0-9]{3})-([012][0-9])-([0123][0-9])$"
   },
   "duplicate": {
     "description": "If the item is a duplicate.",
@@ -336,10 +337,37 @@
         "nullable": false
       },
       "weapon_type": {
-        "description": "The weapon classification (e.g., axe)",
+        "description": "The weapon classification (e.g., axes)",
         "type": "string",
         "required": true,
-        "nullable": false
+        "nullable": false,
+        "allowed": [
+          "pickaxes",
+          "thrown_weapons",
+          "whips",
+          "stabbing_swords",
+          "blunt_weapons",
+          "staves",
+          "chinchompas",
+          "banners",
+          "bladed_staves",
+          "slashing_swords",
+          "bows",
+          "polestaves",
+          "crossbows",
+          "spears",
+          "two-handed_swords",
+          "guns",
+          "bulwarks",
+          "axes",
+          "spiked_weapons",
+          "unarmed",
+          "halberds",
+          "claws",
+          "trident-class_weapons",
+          "scythes",
+          "salamanders"
+        ]
       },
       "stances": {
         "description": "An array of weapon stance information.",
@@ -351,28 +379,95 @@
           "schema": {
             "combat_style": {
               "type": "string",
-              "nullable": true,
-              "required": true
+              "nullable": false,
+              "required": true,
+              "allowed": [
+                "impale",
+                "aim and fire",
+                "reap",
+                "bash",
+                "long fuse",
+                "pummel",
+                "smash",
+                "blaze",
+                "flare",
+                "rapid",
+                "lunge",
+                "stab",
+                "swipe",
+                "short fuse",
+                "punch",
+                "kick",
+                "spike",
+                "scorch",
+                "focus",
+                "deflect",
+                "fend",
+                "block",
+                "medium fuse",
+                "flick",
+                "slash",
+                "longrange",
+                "hack",
+                "accurate",
+                "pound",
+                "chop",
+                "jab",
+                "lash",
+                "spell",
+                "spell (defensive)"
+              ]
             },
             "attack_type": {
               "type": "string",
               "nullable": true,
-              "required": true
+              "required": true,
+              "allowed": [
+                "spellcasting",
+                "stab",
+                "ranged",
+                "slash",
+                "crush",
+                "magic",
+                "defensive casting"
+              ]
             },
             "attack_style": {
               "type": "string",
               "nullable": true,
-              "required": true
+              "required": true,
+              "allowed": [
+                "aggressive",
+                "defensive",
+                "magic",
+                "controlled",
+                "accurate"
+              ]
             },
             "experience": {
               "type": "string",
               "nullable": true,
-              "required": true
+              "required": true,
+              "allowed": [
+                "defence",
+                "ranged and defence",
+                "ranged",
+                "shared",
+                "magic and defence",
+                "magic",
+                "strength",
+                "attack"
+              ]
             },
             "boosts": {
               "type": "string",
               "nullable": true,
-              "required": true
+              "required": true,
+              "allowed": [
+                "attack speed by 1 tick",
+                "attack range by 2 squares",
+                "accuracy and damage"
+              ]
             }
           }
         }

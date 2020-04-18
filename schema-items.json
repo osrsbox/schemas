@@ -111,13 +111,13 @@
     "description": "The low alchemy value of the item (cost * 0.4).",
     "type": "integer",
     "required": true,
-    "nullable": false
+    "nullable": true
   },
   "highalch": {
     "description": "The high alchemy value of the item (cost * 0.6).",
     "type": "integer",
     "required": true,
-    "nullable": false
+    "nullable": true
   },
   "weight": {
     "description": "The weight (in kilograms) of the item.",

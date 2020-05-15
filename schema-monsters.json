@@ -127,6 +127,7 @@
       "bird",
       "black demon",
       "black dragon",
+      "black knight",
       "bloodveld",
       "blue dragon",
       "boss",
@@ -194,6 +195,7 @@
       "nechryael",
       "ogre",
       "otherworldly being",
+      "pirate",
       "pyrefiend",
       "rat",
       "red dragon",
@@ -209,7 +211,6 @@
       "shadow warrior",
       "skeletal wyvern",
       "skeleton",
-      "skeletons",
       "smoke devil",
       "spider",
       "spiritual creatures",
@@ -226,7 +227,6 @@
       "wolf",
       "wyrms",
       "zombie"
-      
     ]
   },
   "slayer_monster": {

@@ -78,6 +78,12 @@
     "required": true,
     "nullable": false
   },
+  "venomous": {
+    "description": "If the monster poisons using venom, or not",
+    "type": "boolean",
+    "required": true,
+    "nullable": false
+  },
   "immune_poison": {
     "description": "If the monster is immune to poison, or not",
     "type": "boolean",

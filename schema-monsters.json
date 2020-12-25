@@ -1,6 +1,6 @@
 {
   "id": {
-    "description": "Unique OSRS item ID number.",
+    "description": "Unique OSRS monster ID number.",
     "type": "integer",
     "required": true,
     "nullable": false
@@ -46,16 +46,16 @@
     "description": "The number of hitpoints a monster has.",
     "type": "integer",
     "required": true,
-    "nullable": false
+    "nullable": true
   },
   "max_hit": {
     "description": "The maximum hit of the monster.",
     "type": "integer",
     "required": true,
-    "nullable": false
+    "nullable": true
   },
   "attack_type": {
-    "description": "The attack style (melee, magic, range) of the monster.",
+    "description": "The attack style (e.g., melee, magic, range) of the monster.",
     "type": "list",
     "required": true,
     "nullable": false
@@ -182,7 +182,7 @@
       "lava dragon",
       "lesser demon",
       "lizardmen",
-      "lizards",
+      "lizard",
       "magic axe",
       "mammoth",
       "minotaur",
@@ -204,7 +204,7 @@
       "rogue",
       "rune dragon",
       "sand crab",
-      "scabarites",
+      "scabarite",
       "scorpion",
       "sea snake",
       "shade",
@@ -212,9 +212,9 @@
       "skeletal wyvern",
       "skeleton",
       "smoke devil",
-      "sourhogs",
+      "sourhog",
       "spider",
-      "spiritual creatures",
+      "spiritual creature",
       "steel dragon",
       "suqah",
       "terror dog",
@@ -222,11 +222,11 @@
       "turoth",
       "tzhaar",
       "vampyre",
-      "wall beasts",
+      "wall beast",
       "waterfiend",
       "werewolf",
       "wolf",
-      "wyrms",
+      "wyrm",
       "zombie"
     ]
   },
@@ -277,12 +277,6 @@
     "required": true,
     "nullable": false
   },
-  "icon": {
-    "description": "The monster icon  (in base64 encoding).",
-    "type": "string",
-    "required": true,
-    "nullable": true
-  },
   "wiki_name": {
     "description": "The OSRS Wiki name for the monster.",
     "type": "string",
@@ -325,32 +319,38 @@
     "required": true,
     "nullable": false
   },
-  "attack_stab": {
-    "description": "The attack stab bonus of the monster.",
+  "attack_bonus": {
+    "description": "The attack bonus of the monster.",
     "type": "integer",
     "required": true,
     "nullable": false
   },
-  "attack_slash": {
-    "description": "The attack slash bonus of the monster.",
-    "type": "integer",
-    "required": true,
-    "nullable": false
-  },
-  "attack_crush": {
-    "description": "The attack crush bonus of the monster.",
+  "strength_bonus": {
+    "description": "The strength bonus of the monster.",
     "type": "integer",
     "required": true,
     "nullable": false
   },
   "attack_magic": {
-    "description": "The attack magic bonus of the monster.",
+    "description": "The magic attack of the monster.",
+    "type": "integer",
+    "required": true,
+    "nullable": false
+  },
+  "magic_bonus": {
+    "description": "The magic bonus of the monster.",
     "type": "integer",
     "required": true,
     "nullable": false
   },
   "attack_ranged": {
-    "description": "The attack ranged bonus of the monster.",
+    "description": "The ranged attack of the monster.",
+    "type": "integer",
+    "required": true,
+    "nullable": false
+  },
+  "ranged_bonus": {
+    "description": "The ranged bonus of the monster.",
     "type": "integer",
     "required": true,
     "nullable": false
@@ -381,30 +381,6 @@
   },
   "defence_ranged": {
     "description": "The defence ranged bonus of the monster.",
-    "type": "integer",
-    "required": true,
-    "nullable": false
-  },
-  "attack_accuracy": {
-    "description": "The attack accuracy bonus of the monster.",
-    "type": "integer",
-    "required": true,
-    "nullable": false
-  },
-  "melee_strength": {
-    "description": "The melee strength bonus of the monster.",
-    "type": "integer",
-    "required": true,
-    "nullable": false
-  },
-  "ranged_strength": {
-    "description": "The ranged strength bonus of the monster.",
-    "type": "integer",
-    "required": true,
-    "nullable": false
-  },
-  "magic_damage": {
-    "description": "The magic damage bonus of the monster.",
     "type": "integer",
     "required": true,
     "nullable": false
@@ -442,7 +418,6 @@
           "required": true,
           "nullable": true,
           "regex": "^((([0-9]+)|([0-9]+-[0-9]+))(,(([0-9]+)|([0-9]+-[0-9]+)))*)$"
-
         },
         "noted": {
           "description": "If the item drop is noted, or not.",
@@ -454,23 +429,13 @@
           "description": "The rarity of the item drop (as a float out of 1.0).",
           "type": "float",
           "required": true,
-          "nullable": true
+          "nullable": false
         },
-        "drop_requirements": {
-          "description": "If there are any requirements to getting the specific drop.",
-          "type": "string",
+        "rolls": {
+          "description": "Number of rolls from the drop.",
+          "type": "integer",
           "required": true,
-          "nullable": true,
-          "allowed": [
-            "krystilia-task-only",
-            "superior-only",
-            "catacombs-only",
-            "konar-task-only",
-            "treasure-trails-only",
-            "iorwerth-dungeon-only",
-            "forthos-dungeon-only",
-            "revenants-only"
-          ]
+          "nullable": false
         }
       }
     }

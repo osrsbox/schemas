@@ -11,6 +11,13 @@
     "required": true,
     "nullable": false
   },
+  "last_updated": {
+    "description": "The last time (UTC) the monster was updated (in ISO8601 date format).",
+    "type": "string",
+    "required": true,
+    "nullable": true,
+    "regex": "^(20[0-9]{2})-([012][0-9])-([0123][0-9])$"
+  },
   "incomplete": {
     "description": "If the monster has incomplete wiki data.",
     "type": "boolean",
@@ -24,7 +31,7 @@
     "nullable": false
   },
   "release_date": {
-    "description": "The release date of the monster (in ISO8601 format).",
+    "description": "The release date of the monster (in ISO8601 date format).",
     "type": "string",
     "required": true,
     "nullable": true,
